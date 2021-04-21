@@ -1,0 +1,47 @@
+.w-20 {
+    width: 20%
+}
+.w-50 {
+    width: 50%
+}
+
+.d-flex {
+    display: flex;
+}
+
+.important {
+    color: red;
+    font-weight: bold;
+}
+
+.m-r-10 {
+   margin-right: 10px; 
+}
+
+.p-10 {
+    padding: 10px;
+}
+.p-l-r-10 {
+    padding: 10px 0px;
+}
+
+.grid {
+    width: 95vw; 
+    height: 80vh;
+}
+.text-align-right {
+    text-align: right;
+}
+
+.stat-btn {
+    padding: 5px;
+    text-transform: uppercase;
+    cursor: pointer !important;
+    background: cornflowerblue;
+    color: white;
+    border: 1px solid cornflowerblue;
+}
+
+body {
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", sans-serif
+}
