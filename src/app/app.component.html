@@ -4,9 +4,15 @@
   <div class="w-20"> Current Time: <span class="important">{{stats.currentTime| date: 'dd-MMM-yyyy hh:mm:ss'}}</span></div>
   <div class="w-20"> CPU Usage - System: <span class="important">{{stats.cpuUsage?.system}}</span></div>
   <div class="w-20"> CPU Usage - User: <span class="important">{{stats.cpuUsage?.user}}</span></div>
+  <div class="w-20"> 
+    Server Status: <span class="important" *ngIf="!socketStatus">disconnected! Please refresh the page...</span> 
+    <span class="connected" *ngIf="socketStatus">connected</span></div>
 </div>
 <ag-grid-angular class="ag-theme-alpine grid" [columnDefs]="columnDefs" (gridReady)="onGridReady($event)">
 </ag-grid-angular>
 <div class="d-flex">
   <h3> Total number of records: <span class="important">{{gridApi?.getDisplayedRowCount()}}</span></h3> <h3 class="text-align-right w-50" *ngIf="countdownTimer > 0">Next batch of mock data will load in <span class="important">{{countdownTimer}}</span></h3>
+  
 </div>
+<p>Server Connection will be disconnected after 2 minutes!- This is for demo purpose. we manually disconnected the
+  server</p>
