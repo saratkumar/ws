@@ -4,6 +4,9 @@
   <div class="w-20"> Current Time: <span class="important">{{stats.currentTime| date: 'dd-MMM-yyyy hh:mm:ss'}}</span></div>
   <div class="w-20"> CPU Usage - System: <span class="important">{{stats.cpuUsage?.system}}</span></div>
   <div class="w-20"> CPU Usage - User: <span class="important">{{stats.cpuUsage?.user}}</span></div>
+  <div class="w-20"> 
+    Server Status: <span class="important" *ngIf="!socketStatus">disconnected! Please refresh the page...</span> 
+    <span class="connected" *ngIf="socketStatus">connected</span></div>
 </div>
 <ag-grid-angular class="ag-theme-alpine grid" [columnDefs]="columnDefs" (gridReady)="onGridReady($event)">
 </ag-grid-angular>

@@ -14,6 +14,11 @@
     font-weight: bold;
 }
 
+.connected {
+    color:green;
+    font-weight: bold;
+}
+
 .m-r-10 {
    margin-right: 10px; 
 }
@@ -27,7 +32,7 @@
 
 .grid {
     width: 95vw; 
-    height: 80vh;
+    height: 70vh;
 }
 .text-align-right {
     text-align: right;

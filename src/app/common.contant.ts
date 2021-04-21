@@ -10,5 +10,7 @@ export const COLUMNDEF = [
 
 export enum EVENTLIST {
     REQUEST_FOR_NEW_DATA = 'request-for-data',
-    INCOMING_DATA = 'incoming-data'
+    INCOMING_DATA = 'incoming-data',
+    CONNECT_STATUS = 'connect-status',
+    DISCONNECT_SOC = 'disconnect_soc'
 }
