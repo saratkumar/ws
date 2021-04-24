@@ -11,7 +11,8 @@
 <ag-grid-angular class="ag-theme-alpine grid" [columnDefs]="columnDefs" (gridReady)="onGridReady($event)">
 </ag-grid-angular>
 <div class="d-flex">
-  <h3> Total number of records: <span class="important">{{gridApi?.getDisplayedRowCount()}}</span></h3> <h3 class="text-align-right w-50" *ngIf="countdownTimer > 0">Next batch of mock data will load in <span class="important">{{countdownTimer}}</span></h3>
+  <h3> Total number of records: <span class="important">{{sharedService.gridApi?.getDisplayedRowCount()}}</span></h3> 
+  <!-- <h3 class="text-align-right w-50" *ngIf="countdownTimer > 0">Next batch of mock data will load in <span class="important">{{countdownTimer}}</span></h3> -->
   
 </div>
 <p>Server Connection will be disconnected after 2 minutes!- This is for demo purpose. we manually disconnected the
